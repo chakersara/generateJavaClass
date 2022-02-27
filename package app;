@@ -1,0 +1,12 @@
+package app;
+public class Check{
+	private String check1;
+
+
+public void setCheck1(String newCheck1){
+	this.check1=newCheck1;
+ }
+public String getCheck1(){
+	return this.check1;
+ }
+}

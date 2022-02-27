@@ -1,0 +1,21 @@
+<librairie>
+    
+    <localisation>
+        <pays>Tunisie</pays>
+        <gouvernorat>Ariana</gouvernorat>
+        <ville>La Soukra</ville>
+        <rue>Les Jasmins</rue>
+    </localisation>
+    
+    <livres>
+        <livre>
+            <nom>Un cadavre dans la bibliothèque </nom>
+            <autheur>Taher Ben Jelloun</autheur>
+        </livre>
+        <livre>
+            <nom>Adultère</nom>
+            <autheur>Paulo Coelho</autheur>
+        </livre>
+    </livres>
+    
+</librairie>

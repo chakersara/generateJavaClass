@@ -1,0 +1,410 @@
+{"AnchorPane": {
+    "children": {
+        "MenuBar": {
+            "AnchorPane.leftAnchor": 0,
+            "AnchorPane.rightAnchor": 0,
+            "AnchorPane.topAnchor": 0,
+            "layoutY": 7,
+            "menus": {"Menu": [
+                {
+                    "items": {"MenuItem": {
+                        "fx:id": "exit",
+                        "mnemonicParsing": false,
+                        "onAction": "#exitProgram",
+                        "text": "Close"
+                    }},
+                    "mnemonicParsing": false,
+                    "text": "File"
+                },
+                {
+                    "items": {"MenuItem": {
+                        "mnemonicParsing": false,
+                        "text": "About"
+                    }},
+                    "mnemonicParsing": false,
+                    "text": "Help"
+                }
+            ]},
+            "style": "-fx-background-color: #E0FBFC;"
+        },
+        "SplitPane": {
+            "AnchorPane.bottomAnchor": 0,
+            "AnchorPane.leftAnchor": 0,
+            "AnchorPane.rightAnchor": 0,
+            "AnchorPane.topAnchor": 28,
+            "dividerPositions": "0.12432432432432433, 0.21891891891891893",
+            "items": {"AnchorPane": [
+                {
+                    "children": {"SplitPane": {
+                        "AnchorPane.bottomAnchor": 0,
+                        "AnchorPane.leftAnchor": 0,
+                        "AnchorPane.rightAnchor": 0,
+                        "AnchorPane.topAnchor": 0,
+                        "dividerPositions": 0.785234899328859,
+                        "items": {"AnchorPane": [
+                            {
+                                "minHeight": 0,
+                                "minWidth": 0,
+                                "prefHeight": 160,
+                                "prefWidth": 100,
+                                "style": "-fx-background-color: #293241;"
+                            },
+                            {
+                                "children": {"ImageView": {
+                                    "AnchorPane.leftAnchor": 0,
+                                    "AnchorPane.rightAnchor": 20,
+                                    "AnchorPane.topAnchor": 6,
+                                    "fitWidth": 80,
+                                    "image": {"Image": {"url": "@itserv.png"}},
+                                    "layoutY": 6,
+                                    "pickOnBounds": true,
+                                    "preserveRatio": true
+                                }},
+                                "maxWidth": 100,
+                                "minHeight": 0,
+                                "minWidth": 100,
+                                "prefHeight": 160,
+                                "prefWidth": 100,
+                                "style": "-fx-background-color: #293241;"
+                            }
+                        ]},
+                        "maxHeight": 40,
+                        "prefHeight": 43,
+                        "prefWidth": 598
+                    }},
+                    "layoutX": 10,
+                    "layoutY": 10,
+                    "maxHeight": 70,
+                    "minHeight": 0,
+                    "minWidth": 0,
+                    "prefHeight": 100,
+                    "prefWidth": 160,
+                    "style": "-fx-background-color: #293241;"
+                },
+                {
+                    "children": {"SplitPane": {
+                        "AnchorPane.bottomAnchor": 0,
+                        "AnchorPane.leftAnchor": 0,
+                        "AnchorPane.rightAnchor": 0,
+                        "AnchorPane.topAnchor": 0,
+                        "dividerPositions": "0.2986577181208054, 0.7197986577181208",
+                        "items": {"AnchorPane": [
+                            {
+                                "maxHeight": 20,
+                                "minHeight": 0,
+                                "minWidth": 0,
+                                "prefHeight": 160,
+                                "prefWidth": 100
+                            },
+                            {
+                                "children": {"Button": {
+                                    "AnchorPane.bottomAnchor": 0,
+                                    "AnchorPane.leftAnchor": 0,
+                                    "AnchorPane.rightAnchor": 0,
+                                    "AnchorPane.topAnchor": 0,
+                                    "cursor": {"Cursor": {"fx:constant": "HAND"}},
+                                    "font": {"Font": {
+                                        "name": "Fira Sans Bold",
+                                        "size": 13
+                                    }},
+                                    "fx:id": "upload",
+                                    "layoutX": 100,
+                                    "layoutY": 38,
+                                    "maxHeight": 10,
+                                    "maxWidth": 100,
+                                    "mnemonicParsing": false,
+                                    "onAction": "#uploadFile",
+                                    "prefHeight": 37,
+                                    "prefWidth": 245,
+                                    "style": "-fx-background-color: #E0FBFC;",
+                                    "text": "Upload file",
+                                    "textFill": "#293241"
+                                }},
+                                "maxHeight": 40,
+                                "minHeight": 0,
+                                "minWidth": 0,
+                                "prefHeight": 160,
+                                "prefWidth": 100
+                            },
+                            {
+                                "layoutX": 10,
+                                "layoutY": 10,
+                                "maxHeight": 10,
+                                "minHeight": 0,
+                                "minWidth": 0,
+                                "prefHeight": 88,
+                                "prefWidth": 126
+                            }
+                        ]},
+                        "layoutX": 109,
+                        "layoutY": -22,
+                        "prefHeight": 59,
+                        "prefWidth": 598,
+                        "style": "-fx-background-color: #293241;"
+                    }},
+                    "maxHeight": 70,
+                    "minHeight": 0,
+                    "minWidth": 0,
+                    "prefHeight": 100,
+                    "prefWidth": 160,
+                    "style": "-fx-background-color: #293241;-fx-background-insets: 0;-fx-padding: 0;"
+                },
+                {
+                    "children": {"SplitPane": {
+                        "AnchorPane.bottomAnchor": 0,
+                        "AnchorPane.leftAnchor": 0,
+                        "AnchorPane.rightAnchor": 0,
+                        "AnchorPane.topAnchor": 0,
+                        "dividerPositions": 0.182,
+                        "items": {"AnchorPane": [
+                            {
+                                "children": {"ListView": {
+                                    "AnchorPane.bottomAnchor": 0,
+                                    "AnchorPane.leftAnchor": 0,
+                                    "AnchorPane.rightAnchor": 0,
+                                    "AnchorPane.topAnchor": 0,
+                                    "fx:id": "fileName",
+                                    "layoutX": 56,
+                                    "layoutY": 40,
+                                    "padding": {"Insets": {
+                                        "left": 20,
+                                        "right": 20
+                                    }},
+                                    "prefHeight": 43,
+                                    "prefWidth": 596,
+                                    "style": "-fx-background-color: #293241;"
+                                }},
+                                "maxHeight": 50,
+                                "minHeight": 0,
+                                "minWidth": 0,
+                                "padding": {"Insets": {"top": 20}},
+                                "prefHeight": 76,
+                                "prefWidth": 596,
+                                "style": "-fx-background-color: #293241;"
+                            },
+                            {
+                                "children": {"SplitPane": {
+                                    "AnchorPane.bottomAnchor": 0,
+                                    "AnchorPane.leftAnchor": 0,
+                                    "AnchorPane.rightAnchor": 0,
+                                    "AnchorPane.topAnchor": 0,
+                                    "dividerPositions": "0.4444444444444444, 0.5622895622895623",
+                                    "items": {"AnchorPane": [
+                                        {
+                                            "children": {"ListView": {
+                                                "AnchorPane.bottomAnchor": 0,
+                                                "AnchorPane.leftAnchor": 0,
+                                                "AnchorPane.rightAnchor": -18,
+                                                "AnchorPane.topAnchor": 0,
+                                                "fx:id": "listView",
+                                                "padding": {"Insets": {
+                                                    "left": 20,
+                                                    "right": 20,
+                                                    "top": 4
+                                                }},
+                                                "prefHeight": 227,
+                                                "prefWidth": 261,
+                                                "style": "-fx-background-color: #293241;"
+                                            }},
+                                            "minHeight": 0,
+                                            "minWidth": 0,
+                                            "padding": {"Insets": {"right": 15}},
+                                            "prefHeight": 160,
+                                            "prefWidth": 100
+                                        },
+                                        {
+                                            "SplitPane.resizableWithParent": false,
+                                            "children": {"SplitPane": {
+                                                "AnchorPane.bottomAnchor": 0,
+                                                "AnchorPane.leftAnchor": 0,
+                                                "AnchorPane.rightAnchor": 0,
+                                                "AnchorPane.topAnchor": 0,
+                                                "dividerPositions": "0.09777777777777778, 0.24888888888888888, 0.31555555555555553, 0.4711111111111111",
+                                                "items": {"AnchorPane": [
+                                                    {
+                                                        "maxHeight": 50,
+                                                        "maxWidth": 50,
+                                                        "minHeight": 0,
+                                                        "minWidth": 0,
+                                                        "prefHeight": 44,
+                                                        "prefWidth": 86,
+                                                        "style": "-fx-background-color: #293241;"
+                                                    },
+                                                    {
+                                                        "children": {"Button": {
+                                                            "AnchorPane.bottomAnchor": 0,
+                                                            "AnchorPane.leftAnchor": 0,
+                                                            "AnchorPane.rightAnchor": 0,
+                                                            "AnchorPane.topAnchor": 0,
+                                                            "cursor": {"Cursor": {"fx:constant": "HAND"}},
+                                                            "font": {"Font": {
+                                                                "name": "Fira Sans Bold",
+                                                                "size": 13
+                                                            }},
+                                                            "fx:id": "convert",
+                                                            "layoutY": 23,
+                                                            "mnemonicParsing": false,
+                                                            "onAction": "#convertMe",
+                                                            "prefHeight": 34,
+                                                            "prefWidth": 90,
+                                                            "style": "-fx-background-color: #23395b; -fx-background-radius: 20px; -fx-border-color: #e0fbfc; -fx-border-radius: 20px; -fx-border-width: 2px;",
+                                                            "text": "Convert",
+                                                            "textFill": "#e0fbfc"
+                                                        }},
+                                                        "maxHeight": 50,
+                                                        "maxWidth": 300,
+                                                        "minHeight": 0,
+                                                        "minWidth": 50,
+                                                        "prefHeight": 62,
+                                                        "prefWidth": 86
+                                                    },
+                                                    {
+                                                        "SplitPane.resizableWithParent": false,
+                                                        "layoutX": 10,
+                                                        "layoutY": 10,
+                                                        "maxWidth": 0,
+                                                        "minHeight": 0,
+                                                        "minWidth": 0,
+                                                        "prefHeight": 44,
+                                                        "prefWidth": 86
+                                                    },
+                                                    {
+                                                        "children": {"Button": [
+                                                            {
+                                                                "AnchorPane.bottomAnchor": 0,
+                                                                "AnchorPane.leftAnchor": 0,
+                                                                "AnchorPane.rightAnchor": 0,
+                                                                "AnchorPane.topAnchor": 0,
+                                                                "cursor": {"Cursor": {"fx:constant": "HAND"}},
+                                                                "font": {"Font": {
+                                                                    "name": "Fira Sans Bold",
+                                                                    "size": 12
+                                                                }},
+                                                                "fx:id": "tojson",
+                                                                "layoutY": 23,
+                                                                "mnemonicParsing": false,
+                                                                "onAction": "#tojson",
+                                                                "prefHeight": 34,
+                                                                "prefWidth": 73,
+                                                                "style": "-fx-background-color: #23395b; -fx-background-radius: 20px; -fx-border-color: #e0fbfc; -fx-border-radius: 20px; -fx-border-width: 2px;",
+                                                                "text": "TO JSON",
+                                                                "textFill": "#e0fbfc"
+                                                            },
+                                                            {
+                                                                "AnchorPane.bottomAnchor": 0,
+                                                                "AnchorPane.leftAnchor": 0,
+                                                                "AnchorPane.rightAnchor": 0,
+                                                                "AnchorPane.topAnchor": 0,
+                                                                "cursor": {"Cursor": {"fx:constant": "HAND"}},
+                                                                "font": {"Font": {
+                                                                    "name": "Fira Sans Bold",
+                                                                    "size": 12
+                                                                }},
+                                                                "fx:id": "toxml",
+                                                                "layoutX": 10,
+                                                                "layoutY": 10,
+                                                                "mnemonicParsing": false,
+                                                                "onAction": "#toXml",
+                                                                "prefHeight": 29,
+                                                                "prefWidth": 73,
+                                                                "style": "-fx-background-color: #23395b; -fx-background-radius: 20px; -fx-border-color: #e0fbfc; -fx-border-radius: 20px; -fx-border-width: 2px;",
+                                                                "text": "TO XML",
+                                                                "textFill": "#e0fbfc"
+                                                            }
+                                                        ]},
+                                                        "layoutX": 10,
+                                                        "layoutY": 10,
+                                                        "maxHeight": 50,
+                                                        "maxWidth": 300,
+                                                        "minHeight": 0,
+                                                        "minWidth": 50,
+                                                        "prefHeight": 45,
+                                                        "prefWidth": 73
+                                                    },
+                                                    {
+                                                        "layoutX": 10,
+                                                        "layoutY": 10,
+                                                        "maxWidth": 0,
+                                                        "minHeight": 0,
+                                                        "minWidth": 0,
+                                                        "prefHeight": 44,
+                                                        "prefWidth": 86
+                                                    }
+                                                ]},
+                                                "layoutX": -43,
+                                                "orientation": "VERTICAL",
+                                                "prefHeight": 227,
+                                                "prefWidth": 80,
+                                                "style": "-fx-background-color: #293241;"
+                                            }},
+                                            "maxWidth": 250,
+                                            "minHeight": 0,
+                                            "minWidth": 85,
+                                            "padding": {"Insets": {
+                                                "left": 5,
+                                                "right": 5
+                                            }},
+                                            "prefHeight": 227,
+                                            "prefWidth": 200,
+                                            "style": "-fx-background-color: #293241;"
+                                        },
+                                        {
+                                            "children": {"ListView": {
+                                                "AnchorPane.bottomAnchor": 0,
+                                                "AnchorPane.leftAnchor": 0,
+                                                "AnchorPane.rightAnchor": 0,
+                                                "AnchorPane.topAnchor": 0,
+                                                "fx:id": "plotConvert",
+                                                "padding": {"Insets": {"left": 10}},
+                                                "prefHeight": 227,
+                                                "prefWidth": 247,
+                                                "style": "-fx-background-color: #293241;"
+                                            }},
+                                            "layoutX": 10,
+                                            "layoutY": 10,
+                                            "minHeight": 0,
+                                            "minWidth": 0,
+                                            "prefHeight": 227,
+                                            "prefWidth": 52,
+                                            "style": "-fx-background-color: #293241;"
+                                        }
+                                    ]},
+                                    "prefHeight": 229,
+                                    "prefWidth": 596
+                                }},
+                                "minHeight": 0,
+                                "minWidth": 0,
+                                "prefHeight": 211,
+                                "prefWidth": 596,
+                                "style": "-fx-background-color: #293241;"
+                            }
+                        ]},
+                        "orientation": "VERTICAL",
+                        "prefHeight": 286,
+                        "prefWidth": 598
+                    }},
+                    "minHeight": 0,
+                    "minWidth": 0,
+                    "prefHeight": 100,
+                    "prefWidth": 160,
+                    "style": "-fx-background-color: #293241;"
+                }
+            ]},
+            "layoutX": 188,
+            "layoutY": 54,
+            "orientation": "VERTICAL",
+            "prefHeight": 400,
+            "prefWidth": 600
+        }
+    },
+    "fx:controller": "app.FXMLController",
+    "maxHeight": "-Infinity",
+    "maxWidth": "-Infinity",
+    "minHeight": "-Infinity",
+    "minWidth": "-Infinity",
+    "prefHeight": 400,
+    "prefWidth": 600,
+    "style": "-fx-background-color: #293241;",
+    "xmlns": "http://javafx.com/javafx/16",
+    "xmlns:fx": "http://javafx.com/fxml/1"
+}}

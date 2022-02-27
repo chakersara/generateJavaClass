@@ -1,0 +1,18 @@
+{"librairie": {
+    "livres": {"livre": [
+        {
+            "autheur": "Taher Ben Jelloun",
+            "nom": "Un cadavre dans la bibliothèque"
+        },
+        {
+            "autheur": "Paulo Coelho",
+            "nom": "Adultère"
+        }
+    ]},
+    "localisation": {
+        "gouvernorat": "Ariana",
+        "pays": "Tunisie",
+        "rue": "Les Jasmins",
+        "ville": "La Soukra"
+    }
+}}
